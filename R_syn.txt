@@ -1,0 +1,423 @@
+a="Shrinidhi"
+> print(a)
+[1] "Shrinidhi"
+> sub("i","j",a)
+[1] "Shrjnidhi"
+> a=(1+1==3)
+> a
+[1] FALSE
+> plot(seq(o,5,length=6))
+Error in seq(o, 5, length = 6) : object 'o' not found
+> plot(seq(0,5,length=6))
+> class(2)
+[1] "numeric"
+> class(a)
+[1] "logical"
+> class(2l)
+Error: unexpected symbol in "class(2l"
+> class(2L)
+[1] "integer"
+> is.numeric(2)
+[1] TRUE
+> is.integer(2)
+[1] FALSE
+> is.integer(2L)
+[1] TRUE
+> a="Shrinidhi"
+> class(a)
+[1] "character"
+> is.numeric(2L)
+[1] TRUE
+> is.numeric(2L)
+[1] TRUE
+> is.integer(2)
+[1] FALSE
+> is.integer(2L)
+[1] TRUE
+> is.double(2L)
+[1] FALSE
+> is.double(2D)
+Error: unexpected symbol in "is.double(2D"
+> a=65
+> rawToChar(a)
+Error in rawToChar(a) : argument 'x' must be a raw vector
+> rawToChar()
+Error in rawToChar() : argument "x" is missing, with no default
+> rawToChar(65)
+Error in rawToChar(65) : argument 'x' must be a raw vector
+> name=shri
+Error: object 'shri' not found
+> name="shri"
+> name
+[1] "shri"
+> charToRaw(name)
+[1] 73 68 72 69
+> rawToBits(name)
+Error in rawToBits(name) : argument 'x' must be a raw vector
+> name=charToRaw(name)
+> name
+[1] 73 68 72 69
+> rawToBits(name)
+ [1] 01 01 00 00 01 01 01 00 00 00 00 01 00 01 01 00 00 01 00 00 01 01 01 00 01 00 00 01 00
+[30] 01 01 00
+> rawToChar(name)
+[1] "shri"
+[1] "shri"
+> charToRaw(name)
+[1] 73 68 72 69
+> rawToBits(name)
+Error in rawToBits(name) : argument 'x' must be a raw vector
+> name=charToRaw(name)
+> name
+[1] 73 68 72 69
+> rawToBits(name)
+ [1] 01 01 00 00 01 01 01 00 00 00 00 01 00 01 01 00 00 01 00 00 01 01 01 00 01 00 00 01 00
+[30] 01 01 00
+> rawToChar(name)
+[1] "shri"
+> as.numeric(TRUE)
+[1] 1
+> as.numeric(4.5)
+[1] 4.5
+> as.numeric("H")
+[1] NA
+Warning message:
+NAs introduced by coercion 
+> str()
+Error in str.default() : argument "object" is missing, with no default
+> str(remian)
+Error in str(remian) : object 'remian' not found
+> str(remain)
+Error in str(remain) : object 'remain' not found
+> as.numeric(4.555)
+[1] 4.555
+> c("h","s","j","p")
+[1] "h" "s" "j" "p"
+> draw<-c("h","s","j","p")
+> draw
+[1] "h" "s" "j" "p"
+> rem-<c(11,12,11,13)
+Error: unexpected '<' in "rem-<"
+> rem<-(11,12,11,13)
+Error: unexpected ',' in "rem<-(11,"
+> rem<-c(11,12,11,13)
+> 
+> 
+> rem
+[1] 11 12 11 13
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> draw<-rem
+> draw
+[1] 11 12 11 13
+> rem
+[1] 11 12 11 13
+> rem
+[1] 11 12 11 13
+> names(rem)<-draw
+> rem
+11 12 11 13 
+11 12 11 13 
+> draw<-c("h","s","j","p")
+> draw
+[1] "h" "s" "j" "p"
+> rem<-c(11,12,14,13)
+> rem
+[1] 11 12 14 13
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> names(rem)<-draw
+> rem
+ h  s  j  p 
+11 12 14 13 
+> names(c(1,2,3))<-draw
+Error in names(c(1, 2, 3)) <- draw : 
+  target of assignment expands to non-language object
+> names(rem)<-draw
+> rem
+ h  s  j  p 
+11 12 14 13 
+> names(rem)<-draw
+> rem
+ h  s  j  p 
+11 12 14 13 
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> names(rem)<-draw
+> rem
+ h  s  j  p 
+11 12 14 13 
+> 
+> 
+> 
+> 
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> names(rem)<-draw
+> 
+> 
+> 
+> 
+> 
+> 
+> rem<-c(h=11,s=12,j=14,p=13)
+> rem
+ h  s  j  p 
+11 12 14 13 
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem
+ h  s  j  p 
+11 12 15 13 
+> draw<-c("h","s","j","p","k")
+> draw
+[1] "h" "s" "j" "p" "k"
+> rem<-c(11,12,14,13)
+> rem
+[1] 11 12 14 13
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> names(rem)<-draw
+Error in names(rem) <- draw : 
+  'names' attribute [5] must be the same length as the vector [4]
+> draw<-c("h","s","j","p","k")
+> draw
+[1] "h" "s" "j" "p" "k"
+> rem<-c(11,12,14,13)
+> rem
+[1] 11 12 14 13
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> names(draw)<-rem
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem
+ h  s  j  p 
+11 12 15 13 
+> 
+> 
+> draw<-c("h","s","j","p","k")
+> draw
+[1] "h" "s" "j" "p" "k"
+> rem<-c(11,12,14,13)
+> rem
+[1] 11 12 14 13
+> is.vector(rem)
+[1] TRUE
+> is.vector(draw)
+[1] TRUE
+> names(draw)<-rem
+> draw
+  11   12   14   13 <NA> 
+ "h"  "s"  "j"  "p"  "k" 
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem
+ h  s  j  p 
+11 12 15 13 
+> str(rem)
+ Named num [1:4] 11 12 15 13
+ - attr(*, "names")= chr [1:4] "h" "s" "j" "p"
+> 
+> 
+> rem(0)
+Error in rem(0) : could not find function "rem"
+> rem[0]
+named numeric(0)
+> 
+> 
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem
+ h  s  j  p 
+11 12 15 13 
+> rem[0]
+named numeric(0)
+> e=c(1,2,3)
+> e+e
+[1] 2 4 6
+> e
+[1] 1 2 3
+> e*e
+[1] 1 4 9
+> e^e
+[1]  1  4 27
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem[1]
+ h 
+11 
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem[-1]
+ s  j  p 
+12 15 13 
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem[-1,-2]
+Error in rem[-1, -2] : incorrect number of dimensions
+> rem<-c(h=11,s=12,j=15,p=13)
+> rem[-c(1,2)]
+ j  p 
+15 13 
+> rem
+ h  s  j  p 
+11 12 15 13 
+> rem[1]
+ h 
+11 
+> str(rem)
+ Named num [1:4] 11 12 15 13
+ - attr(*, "names")= chr [1:4] "h" "s" "j" "p"
+> e=c(1,2,3)
+> e+e
+[1] 2 4 6
+> e*e
+[1] 1 4 9
+> e^e
+[1]  1  4 27
+
+blood<-c("B","AB","O","B","AB")
+> blood
+[1] "B"  "AB" "O"  "B"  "AB"
+> b1<-factor(blood)
+> 
+> 
+> b1
+[1] B  AB O  B  AB
+Levels: AB B O
+> str(b1)
+ Factor w/ 3 levels "AB","B","O": 2 1 3 2 1
+> unique(blood)
+[1] "B"  "AB" "O" 
+> levels(b1)<-c("BT-1","BT-2","BT-3","BT-4")
+> b1
+[1] BT-2 BT-1 BT-3 BT-2 BT-1
+Levels: BT-1 BT-2 BT-3 BT-4
+> blood<-c("B","AB","O","B","AB")
+> blood
+[1] "B"  "AB" "O"  "B"  "AB"
+> b1<-factor(blood)
+> b1
+[1] B  AB O  B  AB
+Levels: AB B O
+> levels(b1)<-c("BT-1","BT-2","BT-3","BT-4")
+> b1
+[1] BT-2 BT-1 BT-3 BT-2 BT-1
+Levels: BT-1 BT-2 BT-3 BT-4
+> factor(blood,labels=c("BT-1","BT-2","BT-3","BT-4"))
+Error in factor(blood, labels = c("BT-1", "BT-2", "BT-3", "BT-4")) : 
+  invalid 'labels'; length 4 should be 1 or 3
+> factor(blood,labels=c("BT-1","BT-2","BT-3"))
+[1] BT-2 BT-1 BT-3 BT-2 BT-1
+Levels: BT-1 BT-2 BT-3
+> t=c("L","S","S","M","M","S")
+> t1=factor(t,ordered = TRUE,labels=c("1","2","3"))
+> t1
+[1] 1 3 3 2 2 3
+Levels: 1 < 2 < 3
+> t1[2]>t1[3]
+[1] FALSE
+> matrix(1:6,nrow=2)
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+> matrix(1:6,ncol=3)
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+> matrix(1:6,ncol=3,byrow = TRUE)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+> matrix(1:6,ncol=2,byrow = TRUE)
+     [,1] [,2]
+[1,]    1    2
+[2,]    3    4
+[3,]    5    6
+
+
+a<-matrix(1:6,byrow=TRUE,nrow=2)
+> a
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+> rbind(a,7:9)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+> cbind(a,5:6)
+     [,1] [,2] [,3] [,4]
+[1,]    1    2    3    5
+[2,]    4    5    6    6
+> cbind(a,c(1,2,3))
+     [,1] [,2] [,3] [,4]
+[1,]    1    2    3    1
+[2,]    4    5    6    2
+Warning message:
+In cbind(a, c(1, 2, 3)) :
+  number of rows of result is not a multiple of vector length (arg 2)
+> > m=matrix(1:6,byrow=TRUE,nrow=2,dimnames=list(c("1","2"),c("a","b","c")))
+> m
+  a b c
+1 1 2 3
+2 4 5 6
+
+
+> name=c("A","B","C","D")
+> age=c(1,2,3,4)
+> child=c(FALSE,TRUE,TRUE,FALSE)
+> df=data.frame(name,age,child)
+> is.data.frame(df)
+[1] TRUE
+> str(df)
+'data.frame':	4 obs. of  3 variables:
+ $ name : Factor w/ 4 levels "A","B","C","D": 1 2 3 4
+ $ age  : num  1 2 3 4
+ $ child: logi  FALSE TRUE TRUE FALSE
+> df=data.frame(name,age,child,stringsAsFactors = FALSE)
+> str(df)
+'data.frame':	4 obs. of  3 variables:
+ $ name : chr  "A" "B" "C" "D"
+ $ age  : num  1 2 3 4
+ $ child: logi  FALSE TRUE TRUE FALSE
+> sex=c("M","F","F","M")
+> df=cbind(df,sex)
+> df
+  name age child sex
+1    A   1 FALSE   M
+2    B   2  TRUE   F
+3    C   3  TRUE   F
+4    D   4 FALSE   M
+> t=data.frame(name="E",age=5,child=FALSE,sex="M")
+> df=rbind(df,t)
+> df
+  name age child sex
+1    A   1 FALSE   M
+2    B   2  TRUE   F
+3    C   3  TRUE   F
+4    D   4 FALSE   M
+5    E   5 FALSE   M
+> value=c("Always","Almost Always","Sometimes","Almost never","Never")
+> cont=c(8,7,14,13,13)
+> d1=data.frame(value,cont)
+> d1
+          value cont
+1        Always    8
+2 Almost Always    7
+3     Sometimes   14
+4  Almost never   13
+5         Never   13
+> dc=table(d1$cont)
+> dc
+
+ 7  8 13 14 
+ 1  1  2  1 
+> barplot(dc,main="Freq of drivers")
+> barplot(d1$cont,main="Freq of choice",names.arg=d1$value)
